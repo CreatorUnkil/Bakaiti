@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bakaiti · Help & Support</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0b0d10;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #eaeef2;
+      padding: 2rem 1.5rem;
+      line-height: 1.6;
+    }
+
+    .support-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #13171c;
+      border-radius: 3rem;
+      padding: 2.5rem 2rem;
+      border: 1px solid #2b3138;
+      box-shadow: 0 25px 45px -12px rgba(0,0,0,0.8);
+    }
+
+    /* header / logo */
+    .support-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid #232b33;
+      padding-bottom: 1.5rem;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo-icon {
+      width: 52px;
+      height: 52px;
+      background: #1e262e;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #2e3842;
+      padding: 6px;
+    }
+
+    .logo-icon svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .brand-name {
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #b7c9e2, #8bb0d9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .support-badge {
+      background: #1f2a33;
+      padding: 0.3rem 1.2rem;
+      border-radius: 60px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #b0c7df;
+      border: 1px solid #31404d;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .support-badge i {
+      color: #73b3e0;
+    }
+
+    /* intro */
+    .support-intro {
+      background: #10161d;
+      border-radius: 2rem;
+      padding: 1.8rem 2rem;
+      margin-bottom: 2.5rem;
+      border: 1px solid #232c36;
+    }
+
+    .support-intro p {
+      font-size: 1.1rem;
+      color: #b6cbdf;
+      max-width: 780px;
+    }
+
+    .support-intro strong {
+      color: #d6e5f5;
+    }
+
+    .support-intro .warning {
+      display: inline-block;
+      margin-top: 0.8rem;
+      background: #1f2833;
+      padding: 0.4rem 1.2rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      color: #e9b37a;
+      border: 1px solid #4d4a2e;
+    }
+
+    .support-intro .warning i {
+      margin-right: 8px;
+      color: #e6b87e;
+    }
+
+    /* quick links (rooms + docs) */
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+      margin-bottom: 2.8rem;
+      background: #10161d;
+      padding: 1.2rem 1.8rem;
+      border-radius: 80px;
+      border: 1px solid #26313c;
+      align-items: center;
+    }
+
+    .quick-links .label {
+      font-weight: 500;
+      color: #8fa8c2;
+      margin-right: 0.5rem;
+    }
+
+    .quick-link-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #1f2a33;
+      padding: 0.3rem 1.2rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #c0d4ea;
+      border: 1px solid #2f3d4b;
+      transition: 0.1s;
+    }
+
+    .quick-link-item i {
+      color: #7aa9d6;
+      font-size: 0.9rem;
+    }
+
+    .quick-link-item.docs {
+      background: #1f2f3f;
+      border-color: #3f5770;
+    }
+
+    .quick-link-item.docs i {
+      color: #b0cbe8;
+    }
+
+    .quick-link-item.email {
+      background: #1d2a36;
+      border-color: #3f4d5a;
+    }
+
+    /* FAQ grid */
+    .faq-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .faq-section {
+      border-top: 1px solid #232b34;
+      padding-top: 2rem;
+    }
+
+    .faq-section h2 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #d4e2f2;
+      margin-bottom: 1.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .faq-section h2 i {
+      color: #6e9ed0;
+      font-size: 1.4rem;
+      width: 2rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.8rem;
+      border-bottom: 1px solid #1f2730;
+      padding-bottom: 1.8rem;
+    }
+
+    .faq-item:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .faq-item h3 {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #dce8f5;
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .faq-item h3 i {
+      color: #6290c0;
+      font-size: 0.9rem;
+      width: 1.4rem;
+    }
+
+    .faq-item p, .faq-item li {
+      color: #b0c6dd;
+      margin-left: 0.2rem;
+    }
+
+    .faq-item ul {
+      padding-left: 1.8rem;
+      margin-top: 0.3rem;
+    }
+
+    .faq-item li {
+      margin-bottom: 0.2rem;
+    }
+
+    .faq-item a {
+      color: #86b1df;
+      text-decoration: none;
+      border-bottom: 1px dotted #3b5775;
+    }
+
+    .faq-item a:hover {
+      color: #b6d6f5;
+      border-bottom-color: #7ba5d0;
+    }
+
+    .inline-code {
+      background: #1e2630;
+      padding: 0.1rem 0.6rem;
+      border-radius: 16px;
+      font-size: 0.85rem;
+      color: #cbdae9;
+      border: 1px solid #2b3848;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 0.8rem 0;
+    }
+
+    .table-wrap table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #12181f;
+      border-radius: 16px;
+      font-size: 0.9rem;
+      border: 1px solid #27323e;
+    }
+
+    .table-wrap th, .table-wrap td {
+      padding: 0.6rem 0.8rem;
+      border: 1px solid #2a3542;
+      text-align: left;
+      color: #c6d7eb;
+    }
+
+    .table-wrap th {
+      background: #1d2631;
+      color: #d2e2f5;
+      font-weight: 600;
+    }
+
+    .table-wrap td:first-child {
+      font-weight: 500;
+    }
+
+    /* footer */
+    .support-footer {
+      margin-top: 3rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #232b34;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem 2rem;
+      color: #70879f;
+      font-size: 0.85rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+    }
+
+    .footer-links a {
+      color: #8ba6c4;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .footer-links a:hover {
+      color: #b8d2ed;
+    }
+
+    .footer-copy {
+      color: #5a738c;
+    }
+
+    @media (max-width: 700px) {
+      .support-container {
+        padding: 1.5rem 1rem;
+        border-radius: 2rem;
+      }
+      .quick-links {
+        border-radius: 30px;
+        padding: 1rem 1.2rem;
+      }
+      .support-intro {
+        padding: 1.2rem;
+      }
+      .brand-name {
+        font-size: 1.7rem;
+      }
+      .faq-section h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="support-container">
+
+  <!-- header -->
+  <div class="support-header">
+    <div class="logo-area">
+      <div class="logo-icon">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="12" y="18" width="76" height="58" rx="14" fill="#1d2b38" stroke="#3d5b77" stroke-width="3" />
+          <circle cx="38" cy="38" r="8" fill="#70a9e6" stroke="#b5d4f5" stroke-width="1.5" />
+          <circle cx="62" cy="38" r="8" fill="#70a9e6" stroke="#b5d4f5" stroke-width="1.5" />
+          <path d="M30 62 L42 50 L58 62 L70 50" stroke="#b5d4f5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+          <rect x="14" y="16" width="72" height="62" rx="14" fill="none" stroke="#2b4055" stroke-width="2.5" />
+          <circle cx="28" cy="80" r="6" fill="#2d4055" stroke="#5c7d9c" stroke-width="2" />
+          <circle cx="72" cy="80" r="6" fill="#2d4055" stroke="#5c7d9c" stroke-width="2" />
+          <path d="M28 86 L28 94 L72 94 L72 86" stroke="#5c7d9c" stroke-width="2.5" stroke-linecap="round" />
+        </svg>
+      </div>
+      <span class="brand-name">Bakaiti</span>
+    </div>
+    <div class="support-badge">
+      <i class="fas fa-life-ring"></i> Help &amp; Support
+    </div>
+  </div>
+
+  <!-- intro -->
+  <div class="support-intro">
+    <p>
+      <i class="fas fa-info-circle" style="color: #629fd6; margin-right: 8px;"></i>
+      <strong>Help &amp; support</strong> – Check the FAQs below or send a message in a room to get community support or get in touch with our team.
+    </p>
+    <div class="warning">
+      <i class="fas fa-exclamation-triangle"></i> You should never share account details in any of these rooms. For account specific questions, please email <strong>support@bakaiti.chat</strong>.
+    </div>
+  </div>
+
+  <!-- quick links -->
+  <div class="quick-links">
+    <span class="label"><i class="fas fa-hashtag"></i> Quick rooms</span>
+    <span class="quick-link-item"><i class="fas fa-desktop"></i> Desktop &amp; Web · Join room</span>
+    <span class="quick-link-item"><i class="fab fa-apple"></i> iOS · Join room</span>
+    <span class="quick-link-item"><i class="fab fa-android"></i> Android · Join room</span>
+    <span class="quick-link-item docs"><i class="fas fa-book"></i> Documentation · View docs</span>
+    <span class="quick-link-item email"><i class="fas fa-envelope"></i> support@bakaiti.chat</span>
+  </div>
+
+  <!-- FAQ sections (condensed from Element, adapted for Bakaiti) -->
+  <div class="faq-grid">
+
+    <!-- Account Management -->
+    <div class="faq-section">
+      <h2><i class="fas fa-user-cog"></i> Account management</h2>
+      <div class="faq-item">
+        <h3><i class="fas fa-key"></i> How do I reset my password?</h3>
+        <p>Please note that we cannot reset passwords or reactivate Bakaiti accounts. If you have an email address attached to your account, you can reset your password <a href="#">here</a>.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-envelope"></i> Do I need an email address to register?</h3>
+        <p>Using an email address when creating a Bakaiti account is optional; it will make it easier for others to discover you and can help you to reset your password if needed. It's ultimately up to the administrator of the server to decide whether or not you need to use an email address. For accounts on the Bakaiti homeserver, supplying an email address during registration is optional, but we reserve the right to occasionally require it for abuse mitigation as referred to in the privacy policy.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-id-card"></i> What is the username used for?</h3>
+        <p>We will use your username to create a Matrix ID allowing to disambiguate you from others with the same display name. It will allow us to keep your email confidential. 🙂</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-phone"></i> Can I register with a phone number?</h3>
+        <p>Not anymore. Sorry!</p>
+      </div>
+    </div>
+
+    <!-- Chat -->
+    <div class="faq-section">
+      <h2><i class="fas fa-comment-dots"></i> Chat</h2>
+      <div class="faq-item">
+        <h3><i class="fas fa-at"></i> How can I mention someone?</h3>
+        <p>Just type their name and they will be notified accordingly. You can autocomplete by pressing the tab button, you don’t need any prefix for the mention to work!</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-bell"></i> With what type of mentions will I get notified?</h3>
+        <p>By default you’ll be notified if your display name and your user name are mentioned. You can add other names, nicknames or keywords on which you want to be notified from your settings, in the Notifications section.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-paperclip"></i> How do I send a file?</h3>
+        <p>Simple, just drag the file into Bakaiti and it will automatically upload. Alternatively you can click on the paperclip icon in the text input field and browse your filesystem.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-mobile-alt"></i> Can I upload a file from a mobile device?</h3>
+        <p>Yes you can! On a mobile device simply press the arrow pointing upwards (iOS) or the + symbol (Android) while in a chat and select your file.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-user-plus"></i> How can I invite a contact to use Bakaiti?</h3>
+        <p>You can invite someone to a room by using the "Invite to this room" button in the right hand side "Room members list" using their Matrix ID (if they have one) or by email. Those without a Matrix ID will be able to preview the room if the room allows for that.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-check-double"></i> Is there a way to know if a message has been read?</h3>
+        <p>Yes! Bakaiti shows who has read a message by displaying their avatar to the right of the message. Hovering over these avatars (or clicking on them on mobile) will give you the user’s info and reading time.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-search"></i> How can I search for a file or message?</h3>
+        <p>To search a room from Desktop, click on the magnifying glass located near the top of the screen. You can then type in a keyword or filename that you are searching for with the ability to select whether you want to search within the specific chat room or across all conversations. For encrypted rooms, search only works on Desktop (not Bakaiti web and mobile) and you need to have "Message search" enabled in the Security &amp; Privacy settings.</p>
+      </div>
+    </div>
+
+    <!-- Settings -->
+    <div class="faq-section">
+      <h2><i class="fas fa-sliders-h"></i> Settings</h2>
+      <div class="faq-item">
+        <h3><i class="fas fa-user-edit"></i> How do I change my account settings?</h3>
+        <p>Click on the drop down menu under your name in the top left corner of the web or desktop app and select <strong>Settings</strong>. From here you can change all of your account and general Bakaiti preferences.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-bell"></i> How do I change my notification settings?</h3>
+        <p>Bakaiti allows you to customise your notifications at two levels: across the app and per room. You can configure how you will be notified for given events by default in the Notifications section of your Settings.</p>
+        <ul>
+          <li><strong>Turned off:</strong> you won’t be notified.</li>
+          <li><strong>Turned on:</strong> message popup, but no sound.</li>
+          <li><strong>“Noisy”:</strong> visual highlight, sound and/or vibration.</li>
+        </ul>
+        <p style="margin-top: 0.5rem;">Per room: <strong>Mute</strong>, <strong>Mentions only</strong>, <strong>All messages</strong>, <strong>All messages (noisy)</strong>.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-envelope"></i> How do I set up email notifications?</h3>
+        <p>You can set Bakaiti up to email you when you have missed some activity. Enable “Email notifications” in the Notification section of your Settings.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-user-tag"></i> How can I change my display name?</h3>
+        <p>You can change your display name in <strong>General</strong> section of your Settings.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-redo-alt"></i> How do I reset my password?</h3>
+        <p>The Bakaiti team won't be able to reset passwords or reactivate accounts. If you have forgotten your password, visit <strong>app.bakaiti.chat</strong> and click “Set a new password”. You will need to input the email address registered to your account. An email will be sent to confirm your request. If you haven't set an email address, please contact your homeserver administrator.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-at"></i> Why would I need to associate an email address to my account?</h3>
+        <p>We strongly recommend that you set an email address in order to be able to reclaim your account if you’ve lost your password. It is also useful for people to find you. If you haven’t done so at registration, you can add as many email addresses as you like, at any point, in the General section of your Settings.</p>
+      </div>
+    </div>
+
+    <!-- Rooms -->
+    <div class="faq-section">
+      <h2><i class="fas fa-door-open"></i> Rooms</h2>
+      <div class="faq-item">
+        <h3><i class="fas fa-cog"></i> How can I change the settings for a specific chat or room?</h3>
+        <p>You can change the settings for any one-to-one chat or group room by clicking on the cog icon next to the room name.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-lock"></i> Can I restrict the access of a room to a given set of people?</h3>
+        <p>You can restrict the access of a room to people who have been invited by selecting the “Private (invite only)” option in the "Security &amp; Privacy" settings of the room. People knowing the link of the room won’t be able to access it if an invite hasn’t been explicitly sent.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-link"></i> Can I limit the access of a room to people knowing its existence?</h3>
+        <p>You can restrict the access of a room to people with whom you shared a link to the room by selecting the “anyone who knows the room link” option in the room settings. Selecting this option will not make the room publicly visible.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-globe"></i> Can I make a room publicly discoverable?</h3>
+        <p>You can get your room listed into your server’s directory by checking the button labeled "Publish this room to the public in example.com's room directory?". By checking this box, it will be discoverable to anyone searching for a room on the server.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-history"></i> Can new members read the history of the room?</h3>
+        <p>Yes, if the room history visibility is set to “Members (full history)” in the room’s Privacy &amp; Security settings. In encrypted rooms, the feature is under development. When you change the history visibility, it won’t affect messages already sent.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-eye"></i> Why would I want to make history visible to anyone?</h3>
+        <p>Making history visible to anyone means that people can see what is being said in a room before joining it. This gives users the opportunity to “peek” into a room. This option is only offered when the room is accessible to anyone and not end-to-end encrypted.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-map-pin"></i> What is a room address?</h3>
+        <p>Setting an address for a room allows you to give it a simple reference, making it easier to share a link. Addresses are linked to the server you are registered on.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-star"></i> What is a favourite room / low priority / historical?</h3>
+        <p><strong>Favourite</strong> – pin important rooms at the top. <strong>Low priority</strong> – move less important rooms to the bottom. <strong>Historical</strong> – lists rooms you’ve left, showing past messages.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-user-shield"></i> As a room admin, can I decide what members can do?</h3>
+        <p>In the roles and permissions section of the room’s settings, you’ll be able to configure the privilege levels required to perform various actions: send message, ban/kick, redact, invite, etc.</p>
+      </div>
+    </div>
+
+    <!-- Privacy & Encryption -->
+    <div class="faq-section">
+      <h2><i class="fas fa-shield-alt"></i> Privacy &amp; Encryption</h2>
+      <div class="faq-item">
+        <h3><i class="fas fa-user-secret"></i> How is my personal data being used?</h3>
+        <p>Here is Bakaiti’s <a href="#">privacy policy</a>. If you have additional questions, contact our DPO at <strong>dpo@bakaiti.chat</strong>.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-flag"></i> How do I report on content in Bakaiti?</h3>
+        <p>Report inappropriate content by hovering on the message, clicking the more options button (three dots) and "Report content".</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-gavel"></i> How do I submit an abuse report or DMCA takedown?</h3>
+        <p>For abuse on the Bakaiti homeserver, contact <strong>abuse@bakaiti.chat</strong>. For DMCA, please read our Copyright Policy and send notices to <strong>dmca@bakaiti.chat</strong>.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-lock"></i> What is end-to-end encryption?</h3>
+        <p>End-to-end encryption means your messages and files are encrypted before they leave your device, and stay encrypted until they reach the other participants' devices. Only the participants can read them.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-key"></i> What is key storage / recovery key?</h3>
+        <p><strong>Key storage</strong> is necessary to decrypt your chat history on new devices. <strong>Recovery key</strong> is a 48-character key generated to restore your chat backup if you lose access to all devices. Store it safely!</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Key Storage</th><th>Recovery Key</th><th>Confidentiality</th><th>Usability &amp; Availability</th></tr></thead>
+            <tbody>
+              <tr><td>On</td><td>Active</td><td>Keys leave device</td><td>Recommended for best UX</td></tr>
+              <tr><td>On</td><td>Inactive</td><td>Only message keys leave</td><td>Decrypt history on new devices</td></tr>
+              <tr><td>Off</td><td>Not available</td><td>No keys leave</td><td>No history on new devices</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-sync-alt"></i> What does “key storage is out of sync” mean?</h3>
+        <p>When one or more keys are missing, you are notified and asked to enter your recovery key to retrieve missing identity keys. If key storage does not have all keys, you will need to reset your digital identity.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-qrcode"></i> What is identity pinning / user verification?</h3>
+        <p>Identity pinning saves a contact’s identity automatically. User verification (emoji or QR code) adds extra protection against man-in-the-middle attacks.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-exclamation-triangle"></i> Why do I see a digital identity reset alert?</h3>
+        <p>You are notified whenever a contact's digital identity has been reset. Confirm with your contact whether they intentionally reset it. If previously verified, we strongly recommend to re-verify.</p>
+      </div>
+    </div>
+
+    <!-- Threads Beta + bugs -->
+    <div class="faq-section">
+      <h2><i class="fas fa-code-branch"></i> Threads Beta &amp; Reporting</h2>
+      <div class="faq-item">
+        <h3><i class="fas fa-server"></i> Why does my homeserver need to support threads?</h3>
+        <p>In order to reliably update the list of threads, your homeserver needs to support threads via MSC3440. Synapse 1.55 and above supports it. Ask your administrator to upgrade.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-dot-circle"></i> How does the room list unread badge work with threads?</h3>
+        <p>The badge shows the number of messages between your last read receipt and the last event. Some “ghost count” may appear, but an unread dot will be shown in the thread list until you’ve opened the thread.</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-bug"></i> How do I submit a bug report or request a feature?</h3>
+        <p><strong>Bug report:</strong> Mobile → Settings → Report a problem. Desktop/web → Settings → Feedback → Start a new one. <br />
+        <strong>Feature request:</strong> Check existing issues on GitHub (<a href="#">Bakaiti Web/Desktop</a>, <a href="#">Bakaiti X iOS</a>, <a href="#">Bakaiti X Android</a>).</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="support-footer">
+    <div class="footer-copy">
+      <i class="far fa-copyright"></i> 2026 Bakaiti · All Rights Reserved.
+    </div>
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-github"></i> GitHub</a>
+      <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+      <a href="#"><i class="fab fa-mastodon"></i> Mastodon</a>
+      <a href="#"><i class="fas fa-shield-alt"></i> Security</a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

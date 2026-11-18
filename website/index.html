@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakaiti · Matrix Chat</title>
+    <!-- Font & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0b0d10;
+            font-family: 'Inter', sans-serif;
+            color: #eaeef2;
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        .card {
+            max-width: 1200px;
+            width: 100%;
+            background: #13171c;
+            border-radius: 3rem;
+            padding: 3rem 2.5rem;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.8), inset 0 1px 2px rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(2px);
+            border: 1px solid #2b3138;
+            transition: all 0.2s ease;
+        }
+
+        /* header / logo area */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.5rem 2rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .logo-icon {
+            width: 64px;
+            height: 64px;
+            background: #1e262e;
+            border-radius: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 16px -6px #0a0c0e, inset 0 -1px 1px #3d4752;
+            border: 1px solid #2e3842;
+            padding: 6px;
+            transition: 0.2s;
+        }
+
+        .logo-icon img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+        }
+
+        .brand {
+            font-weight: 700;
+            font-size: 2.2rem;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #b7c9e2 0%, #8bb0d9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 2px 8px rgba(20, 80, 150, 0.2);
+        }
+
+        .badge-matrix {
+            background: #1f2a33;
+            padding: 0.4rem 1.2rem;
+            border-radius: 60px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            color: #b0c7df;
+            border: 1px solid #31404d;
+            backdrop-filter: blur(2px);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge-matrix i {
+            color: #73b3e0;
+            font-size: 0.9rem;
+        }
+
+        /* hero */
+        .hero {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .hero-text {
+            flex: 1 1 300px;
+        }
+
+        .hero-text h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 1.2rem;
+            background: linear-gradient(to right, #eef5fc, #b8d0ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            color: #a9bacf;
+            max-width: 500px;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        .cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem 1.2rem;
+            align-items: center;
+        }
+
+        .btn-primary {
+            background: #2f4052;
+            border: none;
+            color: white;
+            font-weight: 600;
+            padding: 0.9rem 2.2rem;
+            border-radius: 60px;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(145deg, #2b3c4e, #1d2a36);
+            box-shadow: 0 6px 12px -6px #0b0e11, 0 1px 0 #445767 inset;
+            transition: 0.15s;
+            cursor: default;
+            border: 1px solid #3b4d5e;
+        }
+
+        .btn-primary i {
+            color: #86b9e6;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid #344452;
+            color: #c6d8ec;
+            font-weight: 500;
+            padding: 0.9rem 2rem;
+            border-radius: 60px;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.15s;
+            cursor: default;
+        }
+
+        .btn-secondary i {
+            color: #7c9fc7;
+        }
+
+        .hero-graphic {
+            flex: 1 1 240px;
+            min-width: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #10161c;
+            border-radius: 2.5rem;
+            padding: 1.8rem 1.5rem;
+            border: 1px solid #28313b;
+            box-shadow: inset 0 4px 12px rgba(0,0,0,0.6);
+        }
+
+        .matrix-pulse {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            width: 100%;
+        }
+
+        .matrix-pulse .row {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .matrix-pulse .dot {
+            width: 14px;
+            height: 14px;
+            background: #2d4053;
+            border-radius: 30px;
+            box-shadow: 0 0 0 1px #3a4d61;
+            transition: 0.1s;
+        }
+
+        .dot.active {
+            background: #7bb3e6;
+            box-shadow: 0 0 12px #4b8ec9, 0 0 0 1px #8ec0ef;
+        }
+
+        .dot.pulse {
+            background: #4f7aa3;
+            animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0% { opacity: 0.5; transform: scale(0.9); }
+            50% { opacity: 1; transform: scale(1.2); background: #7bb3e6; }
+            100% { opacity: 0.5; transform: scale(0.9); }
+        }
+
+        .matrix-label {
+            margin-top: 16px;
+            font-size: 0.75rem;
+            letter-spacing: 1.5px;
+            color: #5c748b;
+            font-weight: 500;
+            background: #1b232b;
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
+            border: 1px solid #2d3b48;
+        }
+
+        /* features grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1.8rem;
+            margin-top: 2.2rem;
+            margin-bottom: 1rem;
+            border-top: 1px solid #28313b;
+            padding-top: 2.8rem;
+        }
+
+        .feature-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .feature-item .icon {
+            font-size: 1.6rem;
+            color: #779fc9;
+            width: 48px;
+            height: 48px;
+            background: #1a232d;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #2b3846;
+            box-shadow: inset 0 0 6px #0d1218;
+        }
+
+        .feature-item h4 {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #deeaf5;
+            letter-spacing: -0.2px;
+        }
+
+        .feature-item p {
+            font-size: 0.9rem;
+            color: #8da3bb;
+            line-height: 1.4;
+        }
+
+        /* footer / server info */
+        .footer-meta {
+            margin-top: 3.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            background: #10161d;
+            padding: 1rem 1.6rem;
+            border-radius: 60px;
+            border: 1px solid #26313c;
+            font-size: 0.9rem;
+        }
+
+        .server-badge {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #b6cade;
+        }
+
+        .server-badge i {
+            color: #619fd6;
+            width: 20px;
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            background: #55b87a;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #2d9b5e;
+            animation: glow 2.2s infinite;
+        }
+
+        @keyframes glow {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; box-shadow: 0 0 18px #37b36b; }
+            100% { opacity: 0.6; }
+        }
+
+        .version {
+            color: #6a839e;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+        }
+
+        .credit {
+            color: #546d85;
+            font-size: 0.8rem;
+        }
+
+        .credit i {
+            color: #5d7f9e;
+        }
+
+        /* responsive */
+        @media (max-width: 650px) {
+            .card {
+                padding: 1.8rem 1.2rem;
+                border-radius: 2rem;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .brand {
+                font-size: 2rem;
+            }
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            .hero-text p {
+                font-size: 1rem;
+            }
+            .btn-primary, .btn-secondary {
+                padding: 0.7rem 1.6rem;
+                font-size: 0.9rem;
+            }
+            .footer-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                border-radius: 30px;
+                padding: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- header with logo -->
+        <div class="header">
+            <div class="logo-wrapper">
+                <div class="logo-icon">
+                    <!-- embedded SVG logo (matrix-styled abstract chat) -->
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="12" y="18" width="76" height="58" rx="14" fill="#1d2b38" stroke="#3d5b77" stroke-width="3" />
+                        <circle cx="38" cy="38" r="8" fill="#70a9e6" stroke="#b5d4f5" stroke-width="1.5" />
+                        <circle cx="62" cy="38" r="8" fill="#70a9e6" stroke="#b5d4f5" stroke-width="1.5" />
+                        <path d="M30 62 L42 50 L58 62 L70 50" stroke="#b5d4f5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <rect x="14" y="16" width="72" height="62" rx="14" fill="none" stroke="#2b4055" stroke-width="2.5" />
+                        <circle cx="28" cy="80" r="6" fill="#2d4055" stroke="#5c7d9c" stroke-width="2" />
+                        <circle cx="72" cy="80" r="6" fill="#2d4055" stroke="#5c7d9c" stroke-width="2" />
+                        <path d="M28 86 L28 94 L72 94 L72 86" stroke="#5c7d9c" stroke-width="2.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <span class="brand">Bakaiti</span>
+            </div>
+            <div class="badge-matrix">
+                <i class="fas fa-code-branch"></i> matrix · v2.6
+            </div>
+        </div>
+
+        <!-- hero -->
+        <div class="hero">
+            <div class="hero-text">
+                <h1>chat like <br>nobody's watching</h1>
+                <p>Bakaiti is a <strong>Matrix</strong> server–based chat app. Decentralized, encrypted, and built for real conversations.</p>
+                <div class="cta-group">
+                    <span class="btn-primary"><i class="fas fa-rocket"></i> Launch app</span>
+                    <span class="btn-secondary"><i class="fab fa-github"></i> Matrix room</span>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <div class="matrix-pulse">
+                    <div class="row">
+                        <span class="dot active"></span>
+                        <span class="dot pulse"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="row">
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot pulse"></span>
+                    </div>
+                    <div class="row">
+                        <span class="dot pulse"></span>
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                    </div>
+                    <div class="matrix-label"><i class="fas fa-sync-alt fa-fw"></i> live federation</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- feature grid -->
+        <div class="features">
+            <div class="feature-item">
+                <div class="icon"><i class="fas fa-server"></i></div>
+                <h4>Matrix core</h4>
+                <p>Fully compatible with Matrix 1.8, homeserver agnostic.</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon"><i class="fas fa-lock"></i></div>
+                <h4>E2EE</h4>
+                <p>End-to-end encryption with Olm & Megolm.</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon"><i class="fas fa-comment-dots"></i></div>
+                <h4>Reactions & threads</h4>
+                <p>Rich messaging with replies, edits, and emoji.</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon"><i class="fas fa-globe"></i></div>
+                <h4>Federation</h4>
+                <p>Connect to any Matrix server, no lock-in.</p>
+            </div>
+        </div>
+
+        <!-- footer / server meta -->
+        <div class="footer-meta">
+            <div class="server-badge">
+                <i class="fas fa-network-wired"></i>
+                <span>bakaiti.matrix.dev</span>
+                <span class="status">
+                    <span class="status-dot"></span> 
+                    <span style="color:#b6d0e8;">online</span>
+                </span>
+            </div>
+            <div class="version">
+                <i class="far fa-copyright"></i> 2026 · Bakaiti
+            </div>
+            <div class="credit">
+                <i class="fas fa-cube"></i>  matrix · chat · decentralized
+            </div>
+        </div>
+
+        <!-- tiny note: your logo is attached (the SVG in logo-icon) -->
+        <div style="display: flex; justify-content: flex-end; margin-top: 1rem; opacity: 0.4; font-size: 0.7rem; color: #4b637b; gap: 6px; align-items: center;">
+            <i class="fas fa-check-circle" style="color: #4f8fc9;"></i> logo embedded
+        </div>
+    </div>
+</body>
+</html>
