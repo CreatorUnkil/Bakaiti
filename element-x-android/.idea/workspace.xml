@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+    <layouts>
+      <layout url="file://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-37.0/data/res/layout/notification_2025_top_line_views.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/splash_transparent.xml">
+        <config>
+          <theme>@style/Theme.ElementX</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/transparent.xml">
+        <config>
+          <theme>@style/Theme.ElementX</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/appicon/element/src/debug/res/drawable/ic_launcher_background.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/appicon/element/src/main/res/drawable/ic_launcher.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/appicon/element/src/main/res/mipmap-anydpi-v26/ic_launcher.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/appicon/element/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/appicon/element/src/nightly/res/drawable/ic_launcher_background.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/appicon/element/src/release/res/drawable/ic_launcher_background.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/appicon/enterprise/src/nightly/res/drawable/ic_launcher_background_enterprise.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/appicon/enterprise/src/release/res/drawable/ic_launcher_background_enterprise.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/libraries/compound/src/main/res/drawable/ic_compound_admin.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/libraries/compound/src/main/res/drawable/ic_compound_qr_code.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/libraries/compound/src/main/res/drawable/ic_compound_user_profile_solid.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/libraries/compound/src/main/res/drawable/ic_compound_web_browser.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/libraries/compound/src/main/res/drawable/ic_compound_windows.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable-night/pin.xml">
+        <config>
+          <night>night</night>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable/ic_notification.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable/ic_winner.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable/pin.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable/sample_avatar.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="31d02477-228a-41fc-b5d2-99e05a7cb501" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/splash_transparent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appicon/element/src/main/res/drawable/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.maestro/tests/account/changeServer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.maestro/tests/account/changeServer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.maestro/tests/assertions/assertAnalyticsDisplayed.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.maestro/tests/assertions/assertAnalyticsDisplayed.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appicon/element/src/main/ic_launcher-playstore.png" beforeDir="false" afterPath="$PROJECT_DIR$/appicon/element/src/main/ic_launcher-playstore.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appicon/element/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/appicon/element/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appicon/element/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/appicon/element/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/createroom/impl/src/main/kotlin/io/element/android/features/createroom/impl/configureroom/ConfigureRoomStateProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/features/createroom/impl/src/main/kotlin/io/element/android/features/createroom/impl/configureroom/ConfigureRoomStateProvider.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/linknewdevice/impl/src/main/res/values/localazy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/features/linknewdevice/impl/src/main/res/values/localazy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/login/impl/src/main/res/values-en-rUS/translations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/features/login/impl/src/main/res/values-en-rUS/translations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/login/impl/src/main/res/values/localazy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/features/login/impl/src/main/res/values/localazy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/login/impl/src/test/kotlin/io/element/android/features/login/impl/accountprovider/AccountProviderDataSourceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/features/login/impl/src/test/kotlin/io/element/android/features/login/impl/accountprovider/AccountProviderDataSourceTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/login/impl/src/test/kotlin/io/element/android/features/login/impl/screens/changeaccountprovider/ChangeAccountProviderPresenterTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/features/login/impl/src/test/kotlin/io/element/android/features/login/impl/screens/changeaccountprovider/ChangeAccountProviderPresenterTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/login/impl/src/test/kotlin/io/element/android/features/login/impl/screens/onboarding/OnboardingViewTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/features/login/impl/src/test/kotlin/io/element/android/features/login/impl/screens/onboarding/OnboardingViewTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/designsystem/src/main/kotlin/io/element/android/libraries/designsystem/modifiers/Gradient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/designsystem/src/main/kotlin/io/element/android/libraries/designsystem/modifiers/Gradient.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable-night-xxhdpi/element_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable-night-xxhdpi/element_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable-night/sample_map.png" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable-night/sample_map.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable-xxhdpi/element_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable-xxhdpi/element_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable/ic_notification.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable/ic_notification.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable/sample_avatar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable/sample_avatar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable/sample_map.png" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/designsystem/src/main/res/drawable/sample_map.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/matrix/impl/src/main/kotlin/io/element/android/libraries/matrix/impl/analytics/UtdTracker.kt" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/matrix/impl/src/main/kotlin/io/element/android/libraries/matrix/impl/analytics/UtdTracker.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/matrix/impl/src/test/kotlin/io/element/android/libraries/matrix/impl/analytics/UtdTrackerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/matrix/impl/src/test/kotlin/io/element/android/libraries/matrix/impl/analytics/UtdTrackerTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ui-strings/src/main/res/values/localazy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ui-strings/src/main/res/values/localazy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LocalEmulator::path=C:\Users\ajayd\.android\avd\Resizable_Experimental.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;334f43fe&quot;,
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3GVJ7bkvuK3o0yXXeig90JBltpy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;Compose Preview.Day - HomeViewPreview (state 00).executor&quot;: &quot;Run&quot;,
+    &quot;Compose Preview.Day - RoomSummaryPlaceholderRowPreview.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;I do mind&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Bakaiti/element-x-android&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Bakaiti\element-x-android\appicon\element\src\main" />
+      <recent name="E:\Bakaiti\element-x-android\appicon\element\src\main\res" />
+      <recent name="E:\Bakaiti\element-x-android\libraries\designsystem\src\main\res\drawable-night" />
+      <recent name="E:\Bakaiti\element-x-android\libraries\designsystem\src\main\res\drawable" />
+      <recent name="E:\Bakaiti\element-x-android\appicon\element\src\main\res\mipmap-anydpi-v26" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Bakaiti.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day - HomeViewPreview (state 00)" type="ComposePreviewRunConfiguration" singleton="false" temporary="true">
+      <module name="ElementX.features.home.impl" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="--es composable io.element.android.features.home.impl.HomeViewKt.HomeViewPreview --es parameterProviderClassName io.element.android.features.home.impl.HomeStateProvider --ei parameterProviderIndex 0" />
+      <option name="MODE" value="specific_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="androidx.compose.ui.tooling.PreviewActivity" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="true" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <compose-preview-run-configuration composable-fqn="io.element.android.features.home.impl.HomeViewKt.HomeViewPreview" parameter-provider-class-name="io.element.android.features.home.impl.HomeStateProvider" parameter-provider-index="0" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day - RoomSummaryPlaceholderRowPreview" type="ComposePreviewRunConfiguration" singleton="false" temporary="true">
+      <module name="ElementX.features.home.impl" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="--es composable io.element.android.features.home.impl.components.RoomSummaryPlaceholderRowKt.RoomSummaryPlaceholderRowPreview" />
+      <option name="MODE" value="specific_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="androidx.compose.ui.tooling.PreviewActivity" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="true" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <compose-preview-run-configuration composable-fqn="io.element.android.features.home.impl.components.RoomSummaryPlaceholderRowKt.RoomSummaryPlaceholderRowPreview" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Compose Preview.Day - HomeViewPreview (state 00)" />
+        <item itemvalue="Compose Preview.Day - RoomSummaryPlaceholderRowPreview" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31d02477-228a-41fc-b5d2-99e05a7cb501" name="Changes" comment="" />
+      <created>1784050639018</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1784050639018</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/features/home/impl/src/main/kotlin/io/element/android/features/home/impl/roomlist/RoomListStateProvider.kt</url>
+          <line>86</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="play_dynamic_filters_status">
+    <option name="appIdToCheckInfo">
+      <map>
+        <entry key="io.element.android.appicon.element.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784367097721" />
+          </value>
+        </entry>
+        <entry key="io.element.android.appicon.enterprise.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784394987760" />
+          </value>
+        </entry>
+        <entry key="io.element.android.appnav.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784395016224" />
+          </value>
+        </entry>
+        <entry key="io.element.android.compound.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784141466763" />
+          </value>
+        </entry>
+        <entry key="io.element.android.features.home.impl.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784396049845" />
+          </value>
+        </entry>
+        <entry key="io.element.android.features.leaveroom.api.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784051604151" />
+          </value>
+        </entry>
+        <entry key="io.element.android.features.linknewdevice.impl.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784223204605" />
+          </value>
+        </entry>
+        <entry key="io.element.android.features.login.impl.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784459447389" />
+          </value>
+        </entry>
+        <entry key="io.element.android.features.securityandprivacy.impl.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784052871344" />
+          </value>
+        </entry>
+        <entry key="io.element.android.features.verifysession.impl.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784055223702" />
+          </value>
+        </entry>
+        <entry key="io.element.android.libraries.androidutils.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784395209350" />
+          </value>
+        </entry>
+        <entry key="io.element.android.libraries.designsystem.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784056211101" />
+          </value>
+        </entry>
+        <entry key="io.element.android.libraries.ui.strings.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784395396128" />
+          </value>
+        </entry>
+        <entry key="io.element.android.x">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784394723365" />
+          </value>
+        </entry>
+        <entry key="io.element.android.x.debug">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784394723367" />
+          </value>
+        </entry>
+        <entry key="io.element.android.x.debug.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784394723366" />
+          </value>
+        </entry>
+        <entry key="io.element.android.x.nightly">
+          <value>
+            <CheckInfo lastCheckTimestamp="1784394723367" />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

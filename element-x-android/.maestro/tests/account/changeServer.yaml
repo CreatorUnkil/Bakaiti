@@ -1,0 +1,21 @@
+appId: ${MAESTRO_APP_ID}
+---
+- tapOn:
+    id: "login-change_server"
+- takeScreenshot: build/maestro/200-ChangeServer
+- tapOn: "Bakaiti"
+- tapOn:
+    id: "login-change_server"
+- tapOn: "Other"
+- tapOn:
+    id: "change_server-server"
+- inputText: "Bakaiti"
+- hideKeyboard
+- extendedWaitUntil:
+    visible: "Bakaiti"
+    timeout: 10000
+- tapOn: "Bakaiti"
+# Revert to matrix.org
+- tapOn:
+    id: "login-change_server"
+- tapOn: "Bakaiti"
